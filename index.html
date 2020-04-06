@@ -7,44 +7,61 @@
       <title>Dave and Mitchell Zine</title>
     </head>
 
-    <style type="text/css">
-      .sidenav {
-              margin-left: -40px;
-              width: 100px; /* Set the width of the sidebar */
-              position: absolute;
-              z-index: 1; /* Stay on top */
-              top: 0; /* Stay at the top */
-              left: 0;
-              background-color: #FFF; /* Black */
-              overflow-x: hidden; /* Disable horizontal scroll */
-              padding-top: 20px;
-          }
-          /* The navigation menu links */
-          .sidenav a {
-            display:inline;
-            padding-right: 30px;
-            padding: 60px 8px 6px 1px;
-            text-decoration: none;
-            font-family: 'Zilla Slab', serif;
-            transform:rotate(-90deg);
-            font-size: 22px;
-            line-height: 1.3em;
-            color: #111 ;
+    <style>
 
-            display: block;
-          }
-          .sidenav a:hover {
-            color: #0011ff;
-          }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
 
-          .sidenav h1 {
-            color: #fff;
-          }
-    </style>
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .FMQ {
+        position:relative;
+        display:inline-block;
+      }
+      .dropdown-content2 {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+      .dropdown-content2 a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .FMQ:hover .dropdown-content2 {
+        display: block;
+      }
+</style>
     <body bgcolor="#FFF">
       <!-- Credits -->
-      <div class="sidenav">
-            <a href="FMQ.html">Feed My Quarantein</a>
+      <div class="dropdown">
+        <span>Web-Zines</span>
+          <div class="dropdown-content">
+              <div class="FMQ">
+                <span>Feed My Quarantein</span>
+                  <div class="dropdown-content2">
+                    <a href="FMQ-m.html">Mobile</a>
+                    <a href="FMQ.html">Desktop</a>
+                  </div>
+              </div>
+            </div>
       </div>
     </body>
 </html>
