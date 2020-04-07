@@ -3,14 +3,59 @@
 
 <html>
     <head>
-    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,700&display=swap" rel="stylesheet">
+      <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
       <title>Dave and Mitchell Zine</title>
     </head>
 
+    <script language="javascript" type="text/javascript" data-javascript-target="canvas">
+      var possible_dog_images;
+      var dog;
+
+      var heart;
+
+      var dog1, dog2, heart;
+
+
+
+      function preload(){
+        //create an array of dog image file names
+        possible_dog_images = [
+          "1.jpg",
+          "empty galleries/2.jpg",
+          "empty galleries/3.jpg",
+          "empty galleries/4.jpg",
+          "empty galleries/5.jpg",
+          "empty galleries/6.jpg",
+          "empty galleries/7.jpg",
+          "empty galleries/8.jpg",
+          "empty galleries/9.jpg",
+          "empty galleries/10.jpg",
+          "empty galleries/11.jpg",
+          "empty galleries/12.jpg"
+        ];
+
+  //pick a random dog image
+    var pos = floor(random(possible_dog_images.length));
+
+  //load the picked image
+    dog = loadImage(possible_dog_images[pos]);
+  }
+
+    function setup() {
+      createCanvas(windowWidth, windowHeight);
+    }
+
+    function draw() {
+      background(204);
+      image(dog, 0, 0, windowWidth+3, windowHeight+4);
+    }
+    </script>
+    <canvas id="canvas"></canvas>
     <style>
 
       .dropdown {
-        position: relative;
+        position: fixed;
         display: inline-block;
       }
 
@@ -35,7 +80,6 @@
         position: absolute;
         background-color: #f9f9f9;
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         padding: 12px 16px;
         z-index: 1;
       }
@@ -48,9 +92,17 @@
       .FMQ:hover .dropdown-content2 {
         display: block;
       }
+      canvas{
+          position: fixed;
+          display: block;
+          margin-left: -8px;
+          margin-top: -8px;
+          left: ;
+          z-index: -1;
+
+      }
 </style>
     <body bgcolor="#FFF">
-      <!-- Credits -->
       <div class="dropdown">
         <span>Web-Zines</span>
           <div class="dropdown-content">
