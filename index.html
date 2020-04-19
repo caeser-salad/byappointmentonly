@@ -84,6 +84,30 @@
       @keyframes bounce {
         to { transform: scale(1.2); }
       }
+      .OpenCall{
+        margin: 50px;
+        width: 50%;
+        padding: 100px;
+        font-family: 'Zilla Slab', serif;
+        font-size: 40px;
+        text-shadow: 2px 2px #ff0000;
+        color: #ffee00;
+        position: fixed;
+        display: inline-block;
+        border-radius:50%;
+        -webkit-animation: bounce .7s infinite alternate;
+        -moz-animation: bounce .2s infinite alternate;
+        animation: bounce .7s infinite alternate;
+      }
+      @-webkit-keyframes bounce {
+        to { -webkit-transform: scale(1.1); }
+      }
+      @-moz-keyframes bounce {
+        to { -moz-transform: scale(1.1); }
+      }
+      @keyframes bounce {
+        to { transform: scale(1.1); }
+      }
 
       .dropdown-content {
         display: none;
@@ -150,5 +174,13 @@
               </div>
             </div>
       </div>
+
+
+
+              <div class="OpenCall">
+                <a href="opencall.html">OPEN CALL! OPEN CALL!</a>
+              </div>
+
+
     </body>
 </html>
