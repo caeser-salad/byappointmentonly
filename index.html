@@ -25,11 +25,8 @@
     <script language="javascript" type="text/javascript" data-javascript-target="canvas">
       var possible_dog_images;
       var dog;
-
       var heart;
-
       var dog1, dog2, heart;
-
 
 
       function preload(){
@@ -56,6 +53,11 @@
       background(204);
       image(dog, 0, 0, windowWidth+3, windowHeight+4);
     }
+    function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+
     </script>
     <canvas id="canvas"></canvas>
     <style>
@@ -106,24 +108,27 @@
         to { transform: scale(1.1); }
       }
 
+     
 
  
       canvas{
           position: absolute;
           top: 0;
           display: block;
-          margin-left: -10px;         
+          margin-left: -8px;         
           z-index: -1;
-          border: #ffee00, 10px;
+        
       }
 
       li {
-        line-height: 2;
+        line-height: 3;
         white-space: nowrap;
       }
       
-      body{
+      html, body{
   background-color: #ffee00;
+  overflow: hidden;
+
       }
     
       #aboutpage {
@@ -152,20 +157,29 @@
           color: #009c03;
       }
 
+      img {
+        width: 30%; 
+      }
+
+      img:hover {
+        filter: drop-shadow(0px 0px 20px green) invert(75%);
+      }
+
 </style>
-    <body bgcolor="#FFF">
-      <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8KG3KN"
+    
+<!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8KG3KN"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+<!-- End Google Tag Manager (noscript) -->
+
       <div class="aboutpage">
         <a id="aboutpage" href="about_page.html"> About </a>
       </div>
       <div class="dropdown">
         <ul>
-          <li><a class="OpenCall" href="FMQ.html">Feed My Quarantein</a></li>
-          <li><a class="OpenCall" href="still.html">Feed My Quarantein 2: Still</a></li>
-          <li><a class="OpenCall" href="unstill.html">Feed My Quarantein 3: Unstill</a></li>
+          <li><a class="OpenCall" href="FMQ.html"> <img src="/cover_icons/FMQ_1_icon.jpg"> FMQ 1</a></li><br>
+          <li><a class="OpenCall" href="still.html"> <img src="/cover_icons/FMQ_2_icon.jpg">FMQ 2: Still</a></li><br>
+          <li><a class="OpenCall" href="unstill.html"> <img src="/cover_icons/FMQ_3_icon.jpg">FMQ 3: Unstill</a></li><br>
         </ul>
         
       </div>
