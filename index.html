@@ -3,16 +3,16 @@
 
 <html>
     <head>
+  <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-K8KG3KN');</script>
+  <!-- End Google Tag Manager -->
       <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,700&display=swap" rel="stylesheet">
       <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
       <title>by.appointment.only</title>
-      <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-K8KG3KN');</script>
-  <!-- End Google Tag Manager -->
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -37,6 +37,8 @@
         possible_dog_images = [
           "galleries/1.jpg",
           "galleries/2.jpg",
+          "galleries/10.jpg",
+          "galleries/8.jpg",
         ];
 
   //pick a random dog image
@@ -104,19 +106,17 @@
         to { transform: scale(1.1); }
       }
 
-     /* html{
-     //   background-color: #ffee00;
-      // } */
+   html{
+        
+      } 
  
       canvas{
-          position: fixed;
+          position: absolute;
+          top: 0;
           display: block;
-          margin-left: -8px;
-          margin-top: 00;
+          margin-left: -10px;         
           z-index: -1;
           border: #ffee00, 10px;
-          
-
       }
 
       li {
@@ -124,7 +124,7 @@
         white-space: nowrap;
       }
 body{
-  
+  background-color: #ffee00;
 }
     
 
