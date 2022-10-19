@@ -12,17 +12,21 @@
     -webkit-animation: bounce .8s infinite alternate;
     -moz-animation: bounce .8s infinite alternate;
     animation: bounce .8s infinite alternate;
-  }
-  @-webkit-keyframes bounce {
+    }
+
+@-webkit-keyframes bounce {
     to { -webkit-transform: scale(1.2); }
-  }
-  @-moz-keyframes bounce {
+}
+
+@-moz-keyframes bounce {
     to { -moz-transform: scale(1.2); }
-  }
-  @keyframes bounce {
+}
+
+@keyframes bounce {
     to { transform: scale(1.2); }
-  }
-  .OpenCall{
+}
+
+.OpenCall{
     font-family: 'Zilla Slab', serif;
     font-size: 40px;
     text-shadow: 2px 2px #ff0000;
@@ -34,80 +38,74 @@
     -moz-animation: bounce .2s infinite alternate;
     animation: bounce .7s infinite alternate;
     text-decoration: none;
-    
-  }
-  @-webkit-keyframes bounce {
+}
+
+@-webkit-keyframes bounce {
     to { -webkit-transform: scale(1.1); }
-  }
-  @-moz-keyframes bounce {
+}
+
+@-moz-keyframes bounce {
     to { -moz-transform: scale(1.1); }
-  }
-  @keyframes bounce {
+}
+
+@keyframes bounce {
     to { transform: scale(1.1); }
-  }
+}
 
- 
+canvas{
+    position: absolute;
+    top: 0;
+    display: block;
+    margin-left: -8px;         
+    z-index: -1;
+}
 
-
-  canvas{
-      position: absolute;
-      top: 0;
-      display: block;
-      margin-left: -8px;         
-      z-index: -1;
-    
-  }
-
-  li {
+li {
     line-height: 3;
     white-space: nowrap;
-    
-    
-  }
-  
-  html, body{
+}
+
+html, body{
 background-color: #ffee00;
 overflow: hidden;
+}
 
-  }
+#aboutpage {
+    font-size: 22px;
+    font-family: 'Zilla Slab', serif;
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+    z-index: 1;
+    padding: 1rem;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+}
 
-  #aboutpage {
-        font-size: 22px;
-        font-family: 'Zilla Slab', serif;
-        background-color: #f00;
-        color: #fff;
-        text-decoration: none;
-        z-index: 1;
-        padding: 1rem;
-        position: absolute;
-        left: -5px;
-        top: -5px;
-        
-  }
-
-  #aboutpage:hover {
+#aboutpage:hover {
     color: #0011ff;
     background-color: #009c03;
-  }
+}
 
-  .dropdown a:hover {
-      color: #0011ff;
-  }
+.dropdown a:hover {
+    color: #0011ff;
+}
 
-  .dropdown li:hover {
-      color: #009c03;
-  }
+.dropdown li:hover {
+    color: #009c03;
+}
 
-  img {
+img {
     max-width: 8rem ;
     filter: drop-shadow(0px 0px 10px yellow)  ;
-  }
+}
 
- #fmq1 {
+#fmq1 {
     max-width: 7.8rem ;
-  }
+}
 
 
-  img:hover {
+img:hover {
     filter: drop-shadow(0px 0px 20px teal) invert(75%);
-  }
+}
