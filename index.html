@@ -1,156 +1,34 @@
 <!doctype html>
-<html>
+<html lang="en-US">
     <head>
-  <!-- Google Tag Manager -->
-      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-K8KG3KN');</script>
-  <!-- End Google Tag Manager -->
-      <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,700&display=swap" rel="stylesheet">
-      <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
-      <title>by.appointment.only</title>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-101790641-2');
-    </script>
-    <script src="index.js"></script>
+      <!-- Google Tag Manager -->
+        <script>
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-K8KG3KN');</script>
+      <!-- End Google Tag Manager -->
+        <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,700&display=swap" rel="stylesheet">
+        <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+      <!-- google analytics 4 -->
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-101790641-2');
+        </script>
+        <script src="index.js"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link href="style.css" rel="stylesheet">
+        <title>by.appointment.only</title>
     </head>
+    <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8KG3KN"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     
-
-
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-
-    <canvas id="canvas"></canvas>
-    <style>
-
-      .dropdown {
-        margin: 20px;
-        width: 50%;
-        padding: 10px;
-        font-family: 'Zilla Slab', sans-serif;
-        font-size: 40px;
-        text-shadow: 2px 2px #ff0000;
-        color: #ffee00;
-        position: fixed;
-        display: inline-block;
-        border-radius:50%;
-        -webkit-animation: bounce .8s infinite alternate;
-        -moz-animation: bounce .8s infinite alternate;
-        animation: bounce .8s infinite alternate;
-      }
-      @-webkit-keyframes bounce {
-        to { -webkit-transform: scale(1.2); }
-      }
-      @-moz-keyframes bounce {
-        to { -moz-transform: scale(1.2); }
-      }
-      @keyframes bounce {
-        to { transform: scale(1.2); }
-      }
-      .OpenCall{
-        font-family: 'Zilla Slab', serif;
-        font-size: 40px;
-        text-shadow: 2px 2px #ff0000;
-        color: #ffee00;
-        position: fixed;
-        display: inline-block;
-        border-radius:50%;
-        -webkit-animation: bounce .7s infinite alternate;
-        -moz-animation: bounce .2s infinite alternate;
-        animation: bounce .7s infinite alternate;
-        text-decoration: none;
-        
-      }
-      @-webkit-keyframes bounce {
-        to { -webkit-transform: scale(1.1); }
-      }
-      @-moz-keyframes bounce {
-        to { -moz-transform: scale(1.1); }
-      }
-      @keyframes bounce {
-        to { transform: scale(1.1); }
-      }
-
-     
-
- 
-      canvas{
-          position: absolute;
-          top: 0;
-          display: block;
-          margin-left: -8px;         
-          z-index: -1;
-        
-      }
-
-      li {
-        line-height: 3;
-        white-space: nowrap;
-        
-        
-      }
-      
-      html, body{
-  background-color: #ffee00;
-  overflow: hidden;
-
-      }
-    
-      #aboutpage {
-            font-size: 22px;
-            font-family: 'Zilla Slab', serif;
-            background-color: #f00;
-            color: #fff;
-            text-decoration: none;
-            z-index: 1;
-            padding: 1rem;
-            position: absolute;
-            left: -5px;
-            top: -5px;
-            
-      }
-
-      #aboutpage:hover {
-        color: #0011ff;
-        background-color: #009c03;
-      }
-
-      .dropdown a:hover {
-          color: #0011ff;
-      }
-
-      .dropdown li:hover {
-          color: #009c03;
-      }
-
-      img {
-        max-width: 8rem ;
-        filter: drop-shadow(0px 0px 10px yellow)  ;
-      }
-
-     #fmq1 {
-        max-width: 7.8rem ;
-      }
-
-
-      img:hover {
-        filter: drop-shadow(0px 0px 20px teal) invert(75%);
-      }
-
-
-
-</style>
-    
-<!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8KG3KN"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
+      <canvas id="canvas"></canvas>
       <div class="aboutpage">
         <a id="aboutpage" href="about_page.html"> About </a>
       </div>
@@ -160,12 +38,6 @@
           <li><a class="OpenCall" href="still.html"> <img src="/cover_icons/FMQ_2_icon.jpg"> FMQ 2</a></li><br>
           <li><a class="OpenCall" href="unstill.html"> <img src="/cover_icons/FMQ_3_icon.jpg"> FMQ 3</a></li><br>
         </ul>
-        
       </div>
-      
-
-      
-     
     </body>
-    
 </html>
