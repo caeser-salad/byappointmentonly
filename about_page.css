@@ -1,4 +1,17 @@
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    align-content: stretch;
+   
+    baseline
+}
+
+
+
 body {
     background-color: #ffee00;
 }
@@ -99,8 +112,8 @@ body {
 }
 
 h1 {
-    margin-left:120px;
-    font-size: 40px;
+    
+    font-size: 6rem;
     font-family: 'Zilla Slab', serif;
     color: #000;
 }
@@ -110,15 +123,14 @@ h1 {
     }
 
 h3 {
-    margin-left:120px;
-    font-size: 20px;
+    
+    font-size: 1.5rem;
     font-family: 'Roboto Condensed', sans-serif;
     color: #000;
 }
 
 ul {
-    margin-left:120px;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: 'Roboto Condensed', sans-serif;
     color: #000;
 }
