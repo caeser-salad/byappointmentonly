@@ -1,20 +1,45 @@
+      /* Body */
 
 section {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-basis: 100%;
-    align-content: stretch;
-   
-    baseline
+    border: 2px solid red;
+    flex-direction: column;
+
+      }
+
+h1 {
+    
+    font-size: 6rem;
+    font-family: 'Zilla Slab', serif;
+    color: #000;
 }
 
+.title {
+    font-style: italic
+    }
 
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000;
+    align-self: center;
+    text-align: center;
+}
+
+ul {
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000;
+}
 
 body {
     background-color: #ffee00;
 }
+
+
+/* navigation */
 
 .sidenav {
     margin-left: -45px;
@@ -111,26 +136,4 @@ body {
     color: #fff;
 }
 
-h1 {
-    
-    font-size: 6rem;
-    font-family: 'Zilla Slab', serif;
-    color: #000;
-}
 
-.title {
-    font-style: italic
-    }
-
-h3 {
-    
-    font-size: 1.5rem;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #000;
-}
-
-ul {
-    font-size: 1.5rem;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #000;
-}
