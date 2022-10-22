@@ -1,4 +1,5 @@
-      /* Body */
+
+/* Body */
 
 
 html {
@@ -11,7 +12,6 @@ section {
     justify-content: center;
     flex-direction: column;
     margin: 0 7% 0 7%;
-    /*border: 2px solid red; */
 }
 
 img {
@@ -19,13 +19,17 @@ img {
 }
 
 h1 {
-    font-size: 5vw;
+    font-size: 4vw;
     font-family: 'Zilla Slab', serif;
     color: #000;
 }
 
+a {
+    text-decoration: none;
+}
+
 h4 {
-    font-size: 1.5rem;
+    font-size: 2vw;
     font-family: 'Zilla Slab', serif;
     color: rgb(255, 0, 0);
     white-space: nowrap;
@@ -41,31 +45,12 @@ p {
     color: #000;
     align-self: center;
     text-align: center;
+    background-color: transparent;
 }
 
 body {
     background-color: #ffee00;
 }
-
-@media screen and (min-width: 600px) {
-	p {
-        font-size: 3vw;
-	}
-}
-
-
-@media screen and (min-width: 990px) {
-	p {
-        font-size: 2vw;
-	}
-}
-
-@media screen and (min-width: 990px) {
-	h4 {
-        font-size: 1vw;
-	}
-}
-
 
 /* navigation */
 
@@ -150,8 +135,32 @@ body {
     color: #fff;
     }
 
+/* Media queries */
 
-
-
+/* small phone */
+@media screen and (max-width: 520px){
+    p {
+        font-size: 7vw;
+    }
+    h4 {
+        font-size: 3vw;
+    }
+    h1 {
+        font-size: 2vw;
+    }
+}
+        
+/* desktop */
+@media only screen and (min-width: 990px){
+    p {
+        font-size: 2vw;
+    }
+    h4 {
+        font-size: 2vw;
+    }
+    img {
+        max-width: 80%;
+    }
+}
 
 
