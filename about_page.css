@@ -91,7 +91,7 @@ body {
 .sidenav2 {
     margin-top: -20px;
     margin-left: 0px;
-    width: 87px; /* Set the width of the sidebar */
+    width: 20vw; /* Set the width of the sidebar */
     position: absolute;
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -117,14 +117,14 @@ body {
     }
 
 .home {
-    font-size: 22px;
+    font-size: 4vw;
     font-family: 'Zilla Slab', serif;
     background-color: #f00;
     color: #fff;
 }
 
 .insta {
-    font-size: 22px;
+    font-size: 4vw;
     font-family: 'Zilla Slab', serif;
     background-color: #ffee00;
     color: #0011ff;
@@ -146,7 +146,7 @@ body {
         font-size: 3vw;
     }
     h1 {
-        font-size: 2vw;
+        font-size: 4vw;
     }
 }
         
@@ -163,4 +163,7 @@ body {
     }
 }
 
+@media only screen and (max-width: 700px) {
 
+    
+}
