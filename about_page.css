@@ -19,7 +19,7 @@ img {
 }
 
 h1 {
-    font-size: 4vw;
+    font-size: 5vw;
     font-family: 'Zilla Slab', serif;
     color: #000;
 }
@@ -29,7 +29,7 @@ a {
 }
 
 h4 {
-    font-size: 2vw;
+    font-size: 2.3vw;
     font-family: 'Zilla Slab', serif;
     color: rgb(255, 0, 0);
     white-space: nowrap;
@@ -40,7 +40,7 @@ h4 {
     }
 
 p {
-    font-size: 4vw;
+    font-size: 3.8vw;
     font-family: 'Roboto Condensed', sans-serif;
     color: #000;
     align-self: center;
@@ -53,32 +53,6 @@ body {
 }
 
 /* navigation */
-
-.sidenav {
-    margin-left: -45px;
-    width: 105px; /* Set the width of the sidebar */
-    position: absolute;
-    z-index: 1; /* Stay in front */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #FFF; /* Black */
-    overflow: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-}
-
-/* The navigation menu links */
-.sidenav a {
-    display:inline;
-    padding-right: 30px;
-    padding: 60px 8px 6px 1px;
-    text-decoration: none;
-    font-family: 'Zilla Slab', serif;
-    transform:rotate(-90deg);
-    font-size: 22px;
-    line-height: .8em;
-    color: #111 ;
-    display: block;
-}
 
 .sidenav a:hover {
     color: #0011ff;
@@ -96,17 +70,19 @@ body {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #ff306e; /* Black */
+    background-color: #ff306e; 
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
+    
     }
+
 
 /* The navigation menu links */
 .sidenav2 a {
     display:inline;
     padding: 0 px 8px 6px 1px;
     text-decoration: none;
-    line-height: 1.3em;
+    line-height: 2em;
     text-align:center;
     display: block;
     }
@@ -161,9 +137,14 @@ body {
     img {
         max-width: 80%;
     }
+    .insta{
+        font-size: 2vw;
+    }
+    .home{
+        font-size: 2vw;
+    }
+    .sidenav2{
+        width: 12vw;
+    }
 }
 
-@media only screen and (max-width: 700px) {
-
-    
-}
