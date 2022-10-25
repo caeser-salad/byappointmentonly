@@ -147,6 +147,7 @@ body {
     .sidenav2{
         width: 16vw;
     }
+
 }
         
 /* desktop */
@@ -169,6 +170,8 @@ body {
     .sidenav2{
         width: 12vw;
     }
+
+ 
 }
 
 /* ticker code below */
@@ -181,16 +184,19 @@ body {
 .vwrap, .vitem {
     height: 40px;
     line-height: 40px;
+    width: 100%;
   }
    
   /* (B) FIXED WRAPPER */
   .vwrap {
     overflow: hidden; /* HIDE SCROLL BAR */
-    background: green;
+    background: radial-gradient(rgb(5, 54, 5), rgb(28, 252, 28));
+    filter: drop-shadow(0 0 0.75rem rgb(12, 255, 12));
     color: yellow;
     padding: .5vw;
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
   }
   /* (C) TICKER ITEMS */
   .vitem { text-align: center; }
