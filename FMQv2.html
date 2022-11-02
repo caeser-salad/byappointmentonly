@@ -15,7 +15,8 @@
     <meta name="description" content="Feed My Quarantein is a web-based zine created deep within the COVID-19 isolation laboratory. It was assembled in Orleans Parish, Louisiana, and features contributions from local, national, and international artists. At the time the project was conceived, Louisiana had the highest death rate of anywhere in the world. FMQ was born on Easter Sunday, the date that political leaders initially projected to lift quarantine and resurrect the economy. FMQ is the inaugural project on byappointmentonly.net, an exclusive platform for web-based projects."/>
     </head>
     
-    <style type="text/css">
+    <!-- <style type="text/css"> 
+      
       .sidenav {
               margin-left: -45px;
               width: 105px; /* Set the width of the sidebar */
@@ -61,7 +62,8 @@
                   padding-top: 20px;
               }
               /* The navigation menu links */
-          .sidenav2 a {
+          
+              .sidenav2 a {
                 display:inline;
                 padding: 0 px 8px 6px 1px;
                 text-decoration: none;
@@ -69,6 +71,7 @@
                 text-align:center;
                 display: block;
               }
+
           .home:hover {
                 background-color: #FFF;
                 color: #0011ff;
@@ -109,16 +112,53 @@
             font-family: 'Roboto Condensed', sans-serif;
             color: #000;
           }
+          -->
+    <style type="text/css">
+      .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+      }
 
+    .sidenav a {
+      display: inline-flex;
+      white-space: nowrap;
+      text-decoration: none;
+      font-family: 'Zilla Slab', serif;
+      -webkit-writing-mode: vertical-lr;
+      transform: scale(-1);
+      font-size: 3vh;
+      color: #111 ;
+      margin: 0 2vw 0 3vw ;
+      }
 
+    /* each individual image and link */
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-bottom: 3vw;
+      }
+
+      img {
+        max-width: 150vh;
+        max-height: 110vh;
+        min-width:auto;
+      }
+
+      .sidenav3{
+       
+      }
 
     </style>
+
     <body bgcolor="#FFF">
       <!-- Credits -->
       <div class="sidenav">
-            <a href="http://www.dawndedeaux.net/">Dawn DeDeaux</a>
+            <!--
+            
 
-            <a href="http://ralphpugay.com/">Ralph Pugay</a>
+            
           
             <a href="https://www.instagram.com/sensitive_bro/">Tom O'brien</a>
           
@@ -149,15 +189,48 @@
             <a href="https://sltcamille.com/">Camille Soulat</a>
           
             <a href="https://www.instagram.com/john_isiah_ex3/">John Isiah Walton</a>
-
-
-
+            
       </div>
+
+
       <div class="sidenav2">
             <a href="https://www.instagram.com/by.4ppointment.onl7/" class="insta">Insta</a>
             <a href="index.html" class = "home">Home</a>
             <a href="FMQ-m.html" class = "mobile">*mobile*</a>
       </div>
+-->
+<!-- flex container -->
+    <section class="box">
+      
+      <!-- Cover -->
+      <div class="container" style="padding-bottom: 3vw">
+        <div class="sidenav3">
+          <a href="index.html">Cover</a>
+        </div>
+        <div class="image">
+          <img src ="feed-my-quarantine/fmq-1/FMQ-Cover.jpg" alt="Title">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="sidenav3">
+          <a href="http://www.dawndedeaux.net/">Dawn DeDeaux</a>
+        </div>
+        <div class="image">
+          <img src ="feed-my-quarantine/fmq-1/Acid Frog Double Xsm.jpg">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="sidenav3">
+          <a href="http://ralphpugay.com/">Ralph Pugay</a>
+        </div>
+        <div class="image">
+          <img src ="feed-my-quarantine/fmq-1/condo_sm.gif">
+        </div>
+      </div>
+
+    </section>
 
       <!-- Cover -->
       <div style ="width:720px;margin-top:-8px;">
