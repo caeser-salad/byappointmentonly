@@ -3,6 +3,7 @@
     <head>
       <!-- Title -->
       <meta charset="utf-8" name="description" content="Feed My Quarantein is a web-based zine created deep within the COVID-19 isolation laboratory. It was assembled in Orleans Parish, Louisiana, and features contributions from local, national, and international artists. At the time the project was conceived, Louisiana had the highest death rate of anywhere in the world. FMQ was born on Easter Sunday, the date that political leaders initially projected to lift quarantine and resurrect the economy. FMQ is the inaugural project on byappointmentonly.net, an exclusive platform for web-based projects."/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
       <title>Feed My Quarantein</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101790641-2"></script>
@@ -43,12 +44,12 @@
       
       }
 
-    /* each individual image and link */
+  /* each individual image and link */
     .container {
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      padding-bottom: 3vw;
+      padding-bottom: 4vw;
       padding-left: 3vw;
       
       }
@@ -60,8 +61,20 @@
       }
 
       .sidenav3{
-       
+
       }
+
+  /* small phone */
+      @media screen and (max-width: 610px){
+        img {
+          max-width: 100%;
+        }
+        .sidenav a {
+          background-color: white;
+        }
+      }
+
+
 
     </style>
 
@@ -75,7 +88,7 @@
       <!-- Cover -->
       <div class="container" style="padding-bottom: 3vw">
         <div class="sidenav3">
-          <a href="index.html"> (= </a>
+          <a href="index.html"> >(= </a>
         </div>
         <div class="image">
           <img src ="feed-my-quarantine/fmq-1/FMQ-Cover.jpg" alt="Title">
@@ -139,7 +152,7 @@
         <div class="image">
           <img src ="feed-my-quarantine/fmq-1/john-irving_sm.jpg" 
           style=
-          "max-width: 170vh;
+          "max-width: 100%;
           max-height: 150vh;
           min-width:auto;">
         </div>
@@ -175,7 +188,7 @@
         <div class="image">
           <img src ="feed-my-quarantine/fmq-1/QTein_Land2.gif"
           style="
-          max-width: 150vw;
+          max-width: 100%;
           max-height: 150vh;
           min-width:auto;">
         </div>
@@ -212,7 +225,7 @@
         <div class="image">
           <img src ="feed-my-quarantine/fmq-1/cora_lautze_01.jpg"  
           style=
-            "max-width: 100vh;
+            "max-width: 100%;
             max-height: 150vh;
             min-width:auto;">
         </div>
@@ -295,7 +308,7 @@
         <div class="image">
           <img src ="feed-my-quarantine/fmq-1/DAVE_GREBER_scroll_FMQ-2.jpg"
           style=
-          "max-width: 170vh;
+          "max-width: 100%;
           max-height: 450vh;
           min-width:auto;">
         </div>
@@ -309,7 +322,7 @@
         <div class="image">
           <img src ="feed-my-quarantine/fmq-1/AYAHUASCAREPORTsm.gif"
           style=
-          "max-width: 100vh;
+          "max-width: 100%;
           max-height: 150vh;
           min-width:auto;">
         </div>
@@ -344,10 +357,10 @@
       <div class="image">
         <img src ="feed-my-quarantine/fmq-1/CC_SkyBattle2-sm.jpg"
         style="
-          max-width: 100vh;
+          max-width: 100%;
           max-height: 150vh;
           min-width:auto;">
-        <p style="max-width: 500px;">Chronic Infection, or, Permits for Pipelines, Canals, and Wells of Helis Oil and Gas, Chevron Corporation, Shell Oil Company, and Others in Plaquemines Parish, Louisiana, USA.
+        <p style="max-width: 100%;">Chronic Infection, or, Permits for Pipelines, Canals, and Wells of Helis Oil and Gas, Chevron Corporation, Shell Oil Company, and Others in Plaquemines Parish, Louisiana, USA.
           Year: 2020 Data: LDNR.</p>
       </div>
     </div>
@@ -368,7 +381,7 @@
       <div class="image">
         <img src ="feed-my-quarantine/fmq-1/CarlMarks_sm.jpg"
         style="
-          max-width: 150vh;
+          max-width: 100%;
           max-height: 150vh;
           min-width:auto;">
       </div>
@@ -444,7 +457,7 @@
       <div class="image">
         <img src ="feed-my-quarantine/fmq-1/unnamed.jpg" alt="Title" >
         <img src ="feed-my-quarantine/fmq-1/camille_text.jpg" alt="Title" style="
-        max-width: 80vh;
+        max-width: 100%;
         max-height: 100vh;
         min-width:auto;">
       </div>
