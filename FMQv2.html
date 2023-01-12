@@ -60,9 +60,23 @@
         min-width:auto;
       }
 
-      .sidenav3{
+    #home {
+    font-size: 22px;
+    font-family: 'Zilla Slab', serif;
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+    z-index: 1;
+    padding: 1rem;
+    position: fixed;
+    left: -5px;
+    top: -5px;
+}
 
-      }
+#home:hover {
+    color: #0011ff;
+    background-color: #009c03;
+}
 
   /* small phone */
       @media screen and (max-width: 610px){
@@ -79,7 +93,12 @@
     </style>
 
     <body bgcolor="#FFF">
-      <!-- Credits -->
+      <!-- home -->
+      <div id="home">
+        <a href="index.html" id="home">Home</a>
+        </div>
+
+
       <div class="sidenav">
 
 <!-- flex container -->
