@@ -20,7 +20,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
 
-
     </head>
     
     
@@ -59,10 +58,24 @@
         max-height: 110vh;
         min-width:auto;
       }
+      
+    #home {
+    font-size: 22px;
+    font-family: 'Zilla Slab', serif;
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+    z-index: 1;
+    padding: 1rem;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+}
 
-      .sidenav3{
-
-      }
+#home:hover {
+    color: #0011ff;
+    background-color: #009c03;
+}
 
   /* small phone */
       @media screen and (max-width: 610px){
@@ -74,11 +87,19 @@
         }
       }
 
+
+
     </style>
 
     <body bgcolor="#FFF">
-      <!-- Credits -->
+      <!-- menu -->
+      <div id="home">
+        <a href="index.html" id="home">Home</a>
+        </div>
+     
       <div class="sidenav">
+      
+
 
 <!-- flex container -->
     <section class="box">
@@ -545,6 +566,6 @@
       </div>
     </div>
 
-
+    </div>
   </body>
 </html>
